@@ -1,0 +1,50 @@
+---
+title: "codebook"
+author: "ilo"
+date: "26 03 2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## UCI HAR Dataset - Tidy data process Code Book
+
+According to the course project we obtain the [UCI HAR Dataset](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). The dataset consist of train and test collection parts.
+
+The main idea of this project is combining these data sets in a tidy way
+
+The components are;
+
+1.  Activities
+
+2.  Subjects
+
+3.  Mean and standard deviation of selected features
+
+## Tidy data Process Steps
+
+1.  Creating project folder
+
+2.  Downloading zipped data set
+
+3.  Unzipping the zip file
+
+4.  Reading folders
+
+5.  Merging data
+
+6.  Extraction of measurements of mean and standard deviation/
+
+7.  Arranging data set
+
+8.  Creating tidy data: Two approaches followed
+
+    1.  Wide range tidy data
+
+    2.  Narrow range tidy data
+
+## Tidy Description
+
+Tidy_data_wide file has 180 rows and 68 columns, each column explains the purpose of the measurement. This file is wide type of tidy data. Tidy_data_narrow file is narrower type of tidy data that has six rows and three columns. but in this data set we cannot observe the purpose of the measurements. There are only activity means of the total subjects.
